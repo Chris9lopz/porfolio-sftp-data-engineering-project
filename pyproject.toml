@@ -1,0 +1,36 @@
+[project]
+name = "sftp-data-engineering-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "paramiko>=4.0.0",
+    "pyodbc>=5.3.0",
+    "python-dotenv>=1.2.2",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.3.0",
+    "mypy>=1.9.0",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.ruff.lint]
+select = [
+    "E",   # Errores de pycodestyle
+    "F",   # Pyflakes
+    "I",   # isort (orden de imports)
+    "B",   # flake8-bugbear (errores comunes)
+    "C90", # mccabe (complejidad ciclomática)
+    "N",   # pep8-naming (convenciones de nombres)
+    "UP",  # pyupgrade (sintaxis moderna de Python)
+]
+ignore = []
+
+[tool.ruff.lint.mccabe]
+max-complexity = 10
