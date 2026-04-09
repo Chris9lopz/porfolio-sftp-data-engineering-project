@@ -9,12 +9,13 @@ load_dotenv()
 
 
 def extract_data():
+    # Get .env variables
     server = os.getenv('DB_SERVER')
     database = os.getenv('DB_NAME')
     username = os.getenv('DB_USER')
     password = os.getenv('DB_PASS')
     driver = os.getenv('DB_DRIVER')
-
+    # Set connections
     conn_str = (
         f"DRIVER={driver};"
         f"SERVER={server};"
@@ -22,7 +23,7 @@ def extract_data():
         f"UID={username};"
         f"PWD={password}"
     )
-
+    # Set object to get data
     query = """
         SELECT TOP (10) 
         [BusinessEntityID],
@@ -41,14 +42,14 @@ def extract_data():
         [ModifiedDate]
         FROM [AdventureWorks2019].[HumanResources].[Employee]
     """
-
+    # Try connection
     try:
         with pyodbc.connect(conn_str) as conn:
             cursor = conn.cursor()
             cursor.execute(query)
 
             columns = [column[0] for column in cursor.description]
-
+            # Get generator
             for row in cursor:
                 yield dict(zip(columns, row, strict=True))
 

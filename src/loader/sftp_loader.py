@@ -15,7 +15,7 @@ def sftp_load_file(local_path, remote_path, max_retries=3, delay=5):
         try:
             print(f"Intento {attempt} de {max_retries}")
 
-            # Conexión
+            # Connection
             ssh.connect(
                 hostname=os.getenv('SFTP_SERVER'),
                 username=os.getenv('SFTP_USER'),
@@ -25,7 +25,7 @@ def sftp_load_file(local_path, remote_path, max_retries=3, delay=5):
 
             sftp = ssh.open_sftp()
 
-            # Validar que el archivo existe
+            # Check file
             if not os.path.exists(local_path):
                 raise FileNotFoundError(f"Archivo no encontrado: {local_path}")
 
@@ -34,16 +34,16 @@ def sftp_load_file(local_path, remote_path, max_retries=3, delay=5):
 
             print(f"Archivo subido correctamente a {remote_path}")
 
-            # Cerrar conexiones
+            # Close Connections
             sftp.close()
             ssh.close()
 
-            return  # éxito → salir de la función
+            return
 
         except Exception as e:
             print(f"Error en intento {attempt}: {e}")
 
-            # Cerrar conexión si quedó abierta
+            # Close Connections
             try:
                 ssh.close()
             except Exception as e:
