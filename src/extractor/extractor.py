@@ -25,7 +25,7 @@ def extract_data():
     )
     # Set object to get data
     query = """
-        SELECT TOP (10) 
+        SELECT 
         [BusinessEntityID],
         [NationalIDNumber],
         [LoginID],

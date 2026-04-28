@@ -1,0 +1,91 @@
+BusinessEntityID,NationalIDNumber,LoginID,OrganizationLevel,JobTitle,BirthDate,MaritalStatus,Gender,HireDate,SalariedFlag,VacationHours,SickLeaveHours,CurrentFlag,ModifiedDate
+181,545337468,adventure-works\michael0,4,Production Technician - WC20,1984-11-17,S,M,2008-12-09,False,20,30,True,2014-06-30 00:00:00
+182,368920189,adventure-works\nitin0,4,Production Technician - WC20,1986-12-01,S,M,2008-12-28,False,21,30,True,2014-06-30 00:00:00
+183,969985265,adventure-works\barbara0,4,Production Technician - WC20,1979-07-02,M,F,2009-01-22,False,17,28,True,2014-06-30 00:00:00
+184,305522471,adventure-works\john2,4,Production Technician - WC20,1986-04-05,M,M,2009-02-09,False,18,29,True,2014-06-30 00:00:00
+185,621932914,adventure-works\stefen0,4,Production Technician - WC20,1975-12-21,S,M,2009-02-28,False,19,29,True,2014-06-30 00:00:00
+186,551834634,adventure-works\shane0,3,Production Supervisor - WC45,1990-05-24,S,M,2009-02-08,False,75,57,True,2014-06-30 00:00:00
+187,713403643,adventure-works\yvonne0,4,Production Technician - WC45,1989-04-15,M,F,2008-12-09,False,79,59,True,2014-06-30 00:00:00
+188,435234965,adventure-works\douglas0,4,Production Technician - WC45,1985-11-24,M,M,2008-12-27,False,80,60,True,2014-06-30 00:00:00
+189,187369436,adventure-works\janeth0,4,Production Technician - WC45,1972-07-24,S,F,2009-01-15,False,81,60,True,2014-06-30 00:00:00
+190,456839592,adventure-works\robert0,4,Production Technician - WC45,1985-02-28,S,M,2009-02-02,False,82,61,True,2014-06-30 00:00:00
+191,399658727,adventure-works\lionel0,4,Production Technician - WC45,1988-03-14,S,M,2009-02-26,False,78,59,True,2014-06-30 00:00:00
+192,634335025,adventure-works\brenda0,3,Production Supervisor - WC40,1983-02-28,M,F,2009-03-05,False,71,55,True,2014-06-30 00:00:00
+193,761597760,adventure-works\alejandro0,4,Production Technician - WC40,1988-12-05,S,M,2008-12-06,False,52,46,True,2014-06-30 00:00:00
+194,295971920,adventure-works\fred0,4,Production Technician - WC40,1989-06-25,S,M,2008-12-12,False,47,43,True,2014-06-30 00:00:00
+195,918737118,adventure-works\kevin1,4,Production Technician - WC40,1985-12-25,S,M,2008-12-17,False,58,49,True,2014-06-30 00:00:00
+196,370487086,adventure-works\shammi0,4,Production Technician - WC40,1980-10-04,M,M,2008-12-24,False,53,46,True,2014-06-30 00:00:00
+197,632092621,adventure-works\rajesh0,4,Production Technician - WC40,1977-10-04,M,M,2008-12-31,False,48,44,True,2014-06-30 00:00:00
+198,19312190,adventure-works\lorraine0,4,Production Technician - WC40,1988-11-26,M,F,2009-01-04,False,49,44,True,2014-06-30 00:00:00
+199,992874797,adventure-works\paula1,4,Production Technician - WC40,1987-02-10,M,F,2009-01-12,False,54,47,True,2014-06-30 00:00:00
+200,749211824,adventure-works\frank0,4,Production Technician - WC40,1987-09-06,M,M,2009-01-17,False,56,48,True,2014-06-30 00:00:00
+201,746201340,adventure-works\brian0,4,Production Technician - WC40,1977-02-10,S,M,2009-01-29,False,55,47,True,2014-06-30 00:00:00
+202,436757988,adventure-works\tawana0,4,Production Technician - WC40,1989-11-10,S,M,2009-02-05,False,50,45,True,2014-06-30 00:00:00
+203,693168613,adventure-works\ken1,4,Production Technician - WC40,1981-05-28,M,M,2009-02-24,False,51,45,True,2014-06-30 00:00:00
+204,440379437,adventure-works\gabe0,4,Production Technician - WC40,1988-05-10,M,M,2009-03-08,False,57,48,True,2014-06-30 00:00:00
+205,332349500,adventure-works\lori0,3,Production Supervisor - WC45,1980-07-18,S,F,2009-02-26,False,76,58,True,2014-06-30 00:00:00
+206,835460180,adventure-works\stuart0,4,Production Technician - WC45,1962-09-13,S,M,2008-12-02,False,84,62,True,2014-06-30 00:00:00
+207,687685941,adventure-works\greg0,4,Production Technician - WC45,1970-10-18,S,M,2008-12-02,False,85,62,True,2014-06-30 00:00:00
+208,199546871,adventure-works\scott0,4,Production Technician - WC45,1987-02-10,M,M,2009-01-08,False,86,63,True,2014-06-30 00:00:00
+209,167554340,adventure-works\kathie0,4,Production Technician - WC45,1990-11-01,M,F,2009-01-27,False,87,63,True,2014-06-30 00:00:00
+210,20244403,adventure-works\belinda0,4,Production Technician - WC45,1969-09-17,S,F,2009-02-20,False,83,61,True,2014-06-30 00:00:00
+211,398223854,adventure-works\hazem0,2,Quality Assurance Manager,1977-10-26,S,M,2009-02-28,True,80,60,True,2014-12-26 09:17:08.637000
+212,885055826,adventure-works\peng0,3,Quality Assurance Supervisor,1976-03-18,M,M,2008-12-09,True,81,60,True,2014-06-30 00:00:00
+213,343861179,adventure-works\sootha0,4,Quality Assurance Technician,1966-12-05,M,M,2010-02-23,False,85,62,True,2014-06-30 00:00:00
+214,131471224,adventure-works\andreas0,4,Quality Assurance Technician,1989-03-28,M,M,2009-02-02,False,84,62,True,2014-06-30 00:00:00
+215,381772114,adventure-works\mark0,4,Quality Assurance Technician,1986-04-30,S,M,2009-01-15,False,83,61,True,2014-06-30 00:00:00
+216,403414852,adventure-works\sean0,4,Quality Assurance Technician,1976-03-06,S,M,2008-12-28,False,82,61,True,2014-06-30 00:00:00
+217,345106466,adventure-works\zainal0,3,Document Control Manager,1976-01-30,M,M,2009-01-04,False,77,58,True,2014-06-30 00:00:00
+218,540688287,adventure-works\tengiz0,4,Control Specialist,1990-04-28,S,M,2008-12-16,False,76,58,True,2014-06-30 00:00:00
+219,242381745,adventure-works\sean1,4,Document Control Assistant,1987-03-12,S,M,2009-01-22,False,78,59,True,2014-06-30 00:00:00
+220,260770918,adventure-works\karen0,4,Document Control Assistant,1975-12-25,M,F,2009-02-09,False,79,59,True,2014-06-30 00:00:00
+221,260805477,adventure-works\chris1,4,Control Specialist,1987-05-26,M,M,2009-03-06,False,75,57,True,2014-06-30 00:00:00
+222,685233686,adventure-works\ascott0,2,Master Scheduler,1968-09-17,S,M,2008-12-12,False,44,42,True,2014-12-26 09:17:08.637000
+223,981495526,adventure-works\sairaj0,3,Scheduling Assistant,1987-12-22,M,M,2009-01-26,False,46,43,True,2014-06-30 00:00:00
+224,621209647,adventure-works\william0,3,Scheduling Assistant,1981-11-06,M,M,2009-01-07,False,45,42,True,2014-06-30 00:00:00
+225,470689086,adventure-works\alan0,3,Scheduling Assistant,1984-03-29,M,M,2009-02-13,False,47,43,True,2014-06-30 00:00:00
+226,368691270,adventure-works\brian1,3,Scheduling Assistant,1984-08-11,M,M,2009-03-03,False,48,44,True,2014-06-30 00:00:00
+227,141165819,adventure-works\gary1,2,Facilities Manager,1971-02-18,M,M,2009-12-02,True,86,63,True,2014-06-30 00:00:00
+228,553069203,adventure-works\christian0,3,Maintenance Supervisor,1976-01-18,M,M,2008-12-14,True,92,66,True,2014-06-30 00:00:00
+229,879334904,adventure-works\lori1,4,Janitor,1970-07-31,M,F,2010-02-16,False,90,65,True,2014-06-30 00:00:00
+230,28414965,adventure-works\stuart1,4,Janitor,1971-12-17,M,M,2010-03-05,False,88,64,True,2014-06-30 00:00:00
+231,153479919,adventure-works\jo1,4,Janitor,1954-04-24,M,F,2010-03-07,False,91,65,True,2014-06-30 00:00:00
+232,646304055,adventure-works\pat0,4,Janitor,1970-12-03,S,M,2010-01-27,False,89,64,True,2014-06-30 00:00:00
+233,552560652,adventure-works\magnus0,3,Facilities Administrative Assistant,1971-08-27,M,M,2009-12-21,False,87,63,True,2014-06-30 00:00:00
+234,184188301,adventure-works\laura1,1,Chief Financial Officer,1976-01-06,M,F,2009-01-31,True,0,20,True,2014-06-30 00:00:00
+235,535145551,adventure-works\paula0,2,Human Resources Manager,1976-02-11,M,F,2008-12-06,True,54,47,True,2014-06-30 00:00:00
+236,476980013,adventure-works\grant0,3,Human Resources Administrative Assistant,1976-04-16,S,M,2009-02-25,False,53,46,True,2014-06-30 00:00:00
+237,416679555,adventure-works\hao0,3,Human Resources Administrative Assistant,1977-04-17,S,M,2009-02-06,False,52,46,True,2014-06-30 00:00:00
+238,264306399,adventure-works\vidur0,3,Recruiter,1984-08-01,S,M,2009-01-01,False,50,45,True,2014-06-30 00:00:00
+239,619308550,adventure-works\mindy0,3,Benefits Specialist,1984-11-20,M,F,2008-12-25,False,51,45,True,2014-06-30 00:00:00
+240,332040978,adventure-works\willis0,3,Recruiter,1978-07-18,S,M,2008-12-13,False,49,44,True,2014-06-30 00:00:00
+241,30845,adventure-works\david6,2,Accounts Manager,1983-07-08,M,M,2009-01-30,True,57,48,True,2014-06-30 00:00:00
+242,363923697,adventure-works\deborah0,3,Accounts Receivable Specialist,1976-03-06,M,F,2008-12-18,False,60,50,True,2014-06-30 00:00:00
+243,60517918,adventure-works\candy0,3,Accounts Receivable Specialist,1976-02-23,S,F,2009-01-06,False,61,50,True,2014-06-30 00:00:00
+244,931190412,adventure-works\bryan1,3,Accounts Receivable Specialist,1984-09-20,S,M,2009-01-24,False,62,51,True,2014-06-30 00:00:00
+245,363910111,adventure-works\barbara1,3,Accountant,1976-01-04,M,F,2009-02-18,True,58,49,True,2014-06-30 00:00:00
+246,663843431,adventure-works\dragan0,3,Accounts Payable Specialist,1977-02-14,M,M,2009-02-11,False,63,51,True,2014-06-30 00:00:00
+247,519756660,adventure-works\janet0,3,Accounts Payable Specialist,1979-03-09,M,F,2009-03-01,False,64,52,True,2014-06-30 00:00:00
+248,480951955,adventure-works\mike0,3,Accountant,1979-07-01,S,M,2009-03-08,True,59,49,True,2014-06-30 00:00:00
+249,121491555,adventure-works\wendy0,2,Finance Manager,1984-10-11,S,F,2008-12-25,True,55,47,True,2014-06-30 00:00:00
+250,895209680,adventure-works\sheela0,3,Purchasing Manager,1978-02-10,S,F,2011-02-25,True,49,44,True,2014-06-30 00:00:00
+251,603686790,adventure-works\mikael0,4,Buyer,1984-08-17,S,M,2009-02-10,False,59,49,True,2014-06-30 00:00:00
+252,792847334,adventure-works\arvind0,4,Buyer,1974-08-21,M,M,2009-02-28,False,60,50,True,2014-06-30 00:00:00
+253,407505660,adventure-works\linda2,4,Buyer,1970-11-30,M,F,2009-12-17,False,56,48,True,2014-06-30 00:00:00
+254,482810518,adventure-works\fukiko0,4,Buyer,1970-11-24,M,M,2010-01-04,False,57,48,True,2014-06-30 00:00:00
+255,466142721,adventure-works\gordon0,4,Buyer,1966-11-29,M,M,2010-01-11,False,52,46,True,2014-06-30 00:00:00
+256,367453993,adventure-works\frank2,4,Buyer,1952-05-12,M,M,2010-01-23,False,58,49,True,2014-06-30 00:00:00
+257,381073001,adventure-works\eric2,4,Buyer,1972-09-17,S,M,2010-01-27,False,54,47,True,2014-06-30 00:00:00
+258,785853949,adventure-works\erin0,4,Buyer,1971-01-04,S,F,2010-01-31,False,53,46,True,2014-06-30 00:00:00
+259,20269531,adventure-works\ben0,4,Buyer,1973-06-03,M,M,2010-03-09,False,55,47,True,2014-06-30 00:00:00
+260,437296311,adventure-works\annette0,4,Purchasing Assistant,1978-01-29,M,F,2010-12-06,False,50,45,True,2014-06-30 00:00:00
+261,280633567,adventure-works\reinout0,4,Purchasing Assistant,1978-01-17,M,M,2010-12-25,False,51,45,True,2014-06-30 00:00:00
+262,231203233,adventure-works\david5,2,Assistant to the Chief Financial Officer,1964-06-21,S,M,2009-01-12,False,56,48,True,2014-06-30 00:00:00
+263,441044382,adventure-works\jean0,1,Information Services Manager,1975-12-13,S,F,2008-12-11,True,65,52,True,2014-06-30 00:00:00
+264,858323870,adventure-works\stephanie0,2,Network Manager,1984-03-25,S,F,2009-02-04,True,68,54,True,2014-06-30 00:00:00
+265,749389530,adventure-works\ashvini0,3,Network Administrator,1977-03-27,S,M,2008-12-04,False,70,55,True,2014-06-30 00:00:00
+266,672243793,adventure-works\peter1,3,Network Administrator,1980-05-28,S,M,2009-02-23,False,69,54,True,2014-06-30 00:00:00
+267,58317344,adventure-works\karen1,2,Application Specialist,1978-05-19,S,F,2009-02-16,True,74,57,True,2014-06-30 00:00:00
+268,314747499,adventure-works\ramesh0,2,Application Specialist,1988-03-13,S,M,2009-02-03,True,73,56,True,2014-06-30 00:00:00
+269,671089628,adventure-works\dan0,2,Application Specialist,1987-05-26,M,M,2009-01-11,True,72,56,True,2014-06-30 00:00:00
+270,643805155,adventure-works\françois0,2,Database Administrator,1975-05-17,S,M,2009-01-17,True,67,53,True,2014-06-30 00:00:00

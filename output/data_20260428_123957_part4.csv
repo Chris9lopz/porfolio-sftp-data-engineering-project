@@ -1,0 +1,21 @@
+BusinessEntityID,NationalIDNumber,LoginID,OrganizationLevel,JobTitle,BirthDate,MaritalStatus,Gender,HireDate,SalariedFlag,VacationHours,SickLeaveHours,CurrentFlag,ModifiedDate
+271,929666391,adventure-works\dan1,2,Database Administrator,1976-01-06,M,M,2009-01-22,True,66,53,True,2014-06-30 00:00:00
+272,525932996,adventure-works\janaina0,2,Application Specialist,1985-01-30,M,F,2008-12-23,True,71,55,True,2014-06-30 00:00:00
+273,112432117,adventure-works\brian3,1,Vice President of Sales,1977-06-06,S,M,2011-02-15,True,10,25,True,2014-06-30 00:00:00
+274,502097814,adventure-works\stephen0,2,North American Sales Manager,1951-10-17,M,M,2011-01-04,True,14,27,True,2014-06-30 00:00:00
+275,841560125,adventure-works\michael9,3,Sales Representative,1968-12-25,S,M,2011-05-31,True,38,39,True,2014-06-30 00:00:00
+276,191644724,adventure-works\linda3,3,Sales Representative,1980-02-27,M,F,2011-05-31,True,27,33,True,2014-06-30 00:00:00
+277,615389812,adventure-works\jillian0,3,Sales Representative,1962-08-29,S,F,2011-05-31,True,24,32,True,2014-06-30 00:00:00
+278,234474252,adventure-works\garrett1,3,Sales Representative,1975-02-04,M,M,2011-05-31,True,33,36,True,2014-06-30 00:00:00
+279,716374314,adventure-works\tsvi0,3,Sales Representative,1974-01-18,M,M,2011-05-31,True,29,34,True,2014-06-30 00:00:00
+280,61161660,adventure-works\pamela0,3,Sales Representative,1974-12-06,S,F,2011-05-31,True,22,31,True,2014-06-30 00:00:00
+281,139397894,adventure-works\shu0,3,Sales Representative,1968-03-09,M,M,2011-05-31,True,26,33,True,2014-06-30 00:00:00
+282,399771412,adventure-works\josé1,3,Sales Representative,1963-12-11,M,M,2011-05-31,True,31,35,True,2014-06-30 00:00:00
+283,987554265,adventure-works\david8,3,Sales Representative,1974-02-11,S,M,2011-05-31,True,23,31,True,2014-06-30 00:00:00
+284,90836195,adventure-works\tete0,3,Sales Representative,1978-01-05,M,M,2012-09-30,True,39,39,True,2014-06-30 00:00:00
+285,481044938,adventure-works\syed0,2,Pacific Sales Manager,1975-01-11,M,M,2013-03-14,True,20,30,True,2014-06-30 00:00:00
+286,758596752,adventure-works\lynn0,3,Sales Representative,1977-02-14,S,F,2013-05-30,True,36,38,True,2014-06-30 00:00:00
+287,982310417,adventure-works\amy0,2,European Sales Manager,1957-09-20,M,F,2012-04-16,True,21,30,True,2014-06-30 00:00:00
+288,954276278,adventure-works\rachel0,3,Sales Representative,1975-07-09,S,F,2013-05-30,True,35,37,True,2014-06-30 00:00:00
+289,668991357,adventure-works\jae0,3,Sales Representative,1968-03-17,M,F,2012-05-30,True,37,38,True,2014-06-30 00:00:00
+290,134219713,adventure-works\ranjit0,3,Sales Representative,1975-09-30,S,M,2012-05-30,True,34,37,True,2014-06-30 00:00:00

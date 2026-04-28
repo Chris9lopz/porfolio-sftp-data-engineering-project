@@ -1,3 +1,4 @@
+import glob
 import os
 import time
 
@@ -55,3 +56,26 @@ def sftp_load_file(local_path, remote_path, max_retries=3, delay=5):
             else:
                 print("Se alcanzó el máximo de reintentos.")
                 raise
+
+
+def upload_partitioned_files(local_dir, remote_dir):
+
+    pattern = os.path.join(local_dir, '*_part*.csv')
+    files = sorted(glob.glob(pattern))
+
+    if not files:
+        print('No files found to upload')
+        return
+
+    print(f'Total files found: {len(files)}')
+
+    for file_path in files:
+        file_name = os.path.basename(file_path)
+        remote_path = f'{remote_dir}/{file_name}'
+
+        print('File uploading...')
+
+        try:
+            sftp_load_file(file_path, remote_path)
+        except Exception as e:
+            print(f'Error uploading {file_name}: {e}')

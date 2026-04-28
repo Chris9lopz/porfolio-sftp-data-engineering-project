@@ -1,0 +1,91 @@
+BusinessEntityID,NationalIDNumber,LoginID,OrganizationLevel,JobTitle,BirthDate,MaritalStatus,Gender,HireDate,SalariedFlag,VacationHours,SickLeaveHours,CurrentFlag,ModifiedDate
+1,295847284,adventure-works\ken0,,Chief Executive Officer,1969-01-29,S,M,2009-01-14,True,99,69,True,2014-06-30 00:00:00
+2,245797967,adventure-works\terri0,1,Vice President of Engineering,1971-08-01,S,F,2008-01-31,True,1,20,True,2014-06-30 00:00:00
+3,509647174,adventure-works\roberto0,2,Engineering Manager,1974-11-12,M,M,2007-11-11,True,2,21,True,2014-06-30 00:00:00
+4,112457891,adventure-works\rob0,3,Senior Tool Designer,1974-12-23,S,M,2007-12-05,False,48,80,True,2014-06-30 00:00:00
+5,695256908,adventure-works\gail0,3,Design Engineer,1952-09-27,M,F,2008-01-06,True,5,22,True,2014-06-30 00:00:00
+6,998320692,adventure-works\jossef0,3,Design Engineer,1959-03-11,M,M,2008-01-24,True,6,23,True,2014-06-30 00:00:00
+7,134969118,adventure-works\dylan0,3,Research and Development Manager,1987-02-24,M,M,2009-02-08,True,61,50,True,2014-06-30 00:00:00
+8,811994146,adventure-works\diane1,4,Research and Development Engineer,1986-06-05,S,F,2008-12-29,True,62,51,True,2014-06-30 00:00:00
+9,658797903,adventure-works\gigi0,4,Research and Development Engineer,1979-01-21,M,F,2009-01-16,True,63,51,True,2014-06-30 00:00:00
+10,879342154,adventure-works\michael6,4,Research and Development Manager,1984-11-30,M,M,2009-05-03,True,16,64,True,2014-06-30 00:00:00
+11,974026903,adventure-works\ovidiu0,3,Senior Tool Designer,1978-01-17,S,M,2010-12-05,False,7,23,True,2014-06-30 00:00:00
+12,480168528,adventure-works\thierry0,4,Tool Designer,1959-07-29,M,M,2007-12-11,False,9,24,True,2014-06-30 00:00:00
+13,486228782,adventure-works\janice0,4,Tool Designer,1989-05-28,M,F,2010-12-23,False,8,24,True,2014-06-30 00:00:00
+14,42487730,adventure-works\michael8,3,Senior Design Engineer,1979-06-16,S,M,2010-12-30,True,3,21,True,2014-06-30 00:00:00
+15,56920285,adventure-works\sharon0,3,Design Engineer,1961-05-02,M,F,2011-01-18,True,4,22,True,2014-06-30 00:00:00
+16,24756624,adventure-works\david0,1,Marketing Manager,1975-03-19,S,M,2007-12-20,True,40,40,True,2014-06-30 00:00:00
+17,253022876,adventure-works\kevin0,2,Marketing Assistant,1987-05-03,S,M,2007-01-26,False,42,41,True,2014-06-30 00:00:00
+18,222969461,adventure-works\john5,2,Marketing Specialist,1978-03-06,S,M,2011-02-07,False,48,44,True,2014-06-30 00:00:00
+19,52541318,adventure-works\mary2,2,Marketing Assistant,1978-01-29,S,F,2011-02-14,False,43,41,True,2014-06-30 00:00:00
+20,323403273,adventure-works\wanida0,2,Marketing Assistant,1975-03-17,M,F,2011-01-07,False,41,40,True,2014-06-30 00:00:00
+21,243322160,adventure-works\terry0,2,Marketing Specialist,1986-02-04,M,M,2009-03-02,False,44,42,True,2014-06-30 00:00:00
+22,95958330,adventure-works\sariya0,2,Marketing Specialist,1987-05-21,S,M,2008-12-12,False,45,42,True,2014-06-30 00:00:00
+23,767955365,adventure-works\mary0,2,Marketing Specialist,1962-09-13,M,F,2009-01-12,False,46,43,True,2014-06-30 00:00:00
+24,72636981,adventure-works\jill0,2,Marketing Specialist,1979-06-18,M,F,2009-01-18,False,47,43,True,2014-06-30 00:00:00
+25,519899904,adventure-works\james1,1,Vice President of Production,1983-01-07,S,M,2009-02-03,True,64,52,True,2014-06-30 00:00:00
+26,277173473,adventure-works\peter0,2,Production Control Manager,1982-11-03,M,M,2008-12-01,True,43,41,True,2014-12-26 09:17:08.637000
+27,446466105,adventure-works\jo0,3,Production Supervisor - WC60,1956-10-08,S,F,2008-02-27,False,80,60,True,2014-06-30 00:00:00
+28,14417807,adventure-works\guy1,4,Production Technician - WC60,1988-03-13,M,M,2006-06-30,False,21,30,True,2014-06-30 00:00:00
+29,948320468,adventure-works\mark1,4,Production Technician - WC60,1979-09-25,S,M,2009-01-23,False,19,29,True,2014-06-30 00:00:00
+30,410742000,adventure-works\britta0,4,Production Technician - WC60,1989-09-28,M,F,2009-01-29,False,14,27,True,2014-06-30 00:00:00
+31,750246141,adventure-works\margie0,4,Production Technician - WC60,1986-05-20,M,F,2009-01-04,False,18,29,True,2014-06-30 00:00:00
+32,330211482,adventure-works\rebecca0,4,Production Technician - WC60,1977-07-10,M,F,2008-12-29,False,23,31,True,2014-06-30 00:00:00
+33,801758002,adventure-works\annik0,4,Production Technician - WC60,1976-12-26,M,M,2008-12-17,False,17,28,True,2014-06-30 00:00:00
+34,754372876,adventure-works\suchitra0,4,Production Technician - WC60,1987-06-10,M,F,2009-02-16,False,15,27,True,2014-06-30 00:00:00
+35,999440576,adventure-works\brandon0,4,Production Technician - WC60,1977-01-10,M,M,2009-02-08,False,22,31,True,2014-06-30 00:00:00
+36,788456780,adventure-works\jose0,4,Production Technician - WC60,1984-07-31,M,M,2009-02-10,False,20,30,True,2014-06-30 00:00:00
+37,442121106,adventure-works\chris2,4,Production Technician - WC60,1986-08-07,S,M,2009-03-07,False,16,28,True,2014-06-30 00:00:00
+38,6298838,adventure-works\kim1,4,Production Technician - WC60,1966-12-14,M,F,2010-01-16,False,24,32,True,2014-06-30 00:00:00
+39,461786517,adventure-works\ed0,4,Production Technician - WC60,1971-09-11,S,M,2010-02-05,False,25,32,True,2014-06-30 00:00:00
+40,309738752,adventure-works\jolynn0,3,Production Supervisor - WC60,1956-01-16,S,F,2007-12-26,False,82,61,True,2014-06-30 00:00:00
+41,458159238,adventure-works\bryan0,4,Production Technician - WC60,1973-08-27,S,M,2009-01-21,False,35,37,True,2014-06-30 00:00:00
+42,339712426,adventure-works\james0,4,Production Technician - WC60,1984-07-25,M,M,2008-12-27,False,39,39,True,2014-06-30 00:00:00
+43,693325305,adventure-works\nancy0,4,Production Technician - WC60,1988-11-19,M,F,2009-01-02,False,34,37,True,2014-06-30 00:00:00
+44,276751903,adventure-works\simon0,4,Production Technician - WC60,1990-05-17,S,M,2008-12-08,False,38,39,True,2014-06-30 00:00:00
+45,500412746,adventure-works\thomas0,4,Production Technician - WC60,1986-01-10,M,M,2009-02-26,False,37,38,True,2014-06-30 00:00:00
+46,66073987,adventure-works\eugene1,4,Production Technician - WC60,1976-02-10,S,M,2009-02-08,False,36,38,True,2014-06-30 00:00:00
+47,33237992,adventure-works\andrew0,3,Production Supervisor - WC10,1988-09-06,S,M,2009-02-22,False,65,52,True,2014-06-30 00:00:00
+48,690627818,adventure-works\ruth0,4,Production Technician - WC10,1956-06-04,M,F,2008-01-06,False,83,61,True,2014-06-30 00:00:00
+49,912265825,adventure-works\barry0,4,Production Technician - WC10,1956-03-26,S,M,2008-01-07,False,88,64,True,2014-06-30 00:00:00
+50,844973625,adventure-works\sidney0,4,Production Technician - WC10,1956-08-30,M,M,2008-02-02,False,84,62,True,2014-06-30 00:00:00
+51,132674823,adventure-works\jeffrey0,4,Production Technician - WC10,1956-07-11,S,M,2008-02-20,False,85,62,True,2014-06-30 00:00:00
+52,565090917,adventure-works\doris0,4,Production Technician - WC10,1956-04-04,M,F,2008-03-10,False,86,63,True,2014-06-30 00:00:00
+53,9659517,adventure-works\diane0,4,Production Technician - WC10,1956-03-29,M,F,2008-03-28,False,87,63,True,2014-06-30 00:00:00
+54,109272464,adventure-works\bonnie0,4,Production Technician - WC10,1986-09-10,M,F,2010-01-01,False,89,64,True,2014-06-30 00:00:00
+55,233069302,adventure-works\taylor0,3,Production Supervisor - WC50,1956-04-01,M,M,2008-02-08,False,79,59,True,2014-06-30 00:00:00
+56,652535724,adventure-works\denise0,4,Production Technician - WC50,1988-07-06,M,F,2009-02-05,False,9,24,True,2014-06-30 00:00:00
+57,10708100,adventure-works\frank1,4,Production Technician - WC50,1971-07-24,S,M,2009-02-23,False,10,25,True,2014-06-30 00:00:00
+58,571658797,adventure-works\kendall0,4,Production Technician - WC50,1986-05-30,M,M,2008-12-05,False,11,25,True,2014-06-30 00:00:00
+59,843479922,adventure-works\bob0,4,Production Technician - WC50,1979-08-16,S,M,2008-12-24,False,12,26,True,2014-06-30 00:00:00
+60,827686041,adventure-works\pete0,4,Production Technician - WC50,1977-02-03,S,M,2009-01-11,False,13,26,True,2014-06-30 00:00:00
+61,92096924,adventure-works\diane2,4,Production Technician - WC50,1989-08-09,S,F,2009-01-18,False,8,24,True,2014-06-30 00:00:00
+62,494170342,adventure-works\john0,3,Production Supervisor - WC60,1956-08-07,M,M,2008-03-17,False,81,60,True,2014-06-30 00:00:00
+63,414476027,adventure-works\maciej0,4,Production Technician - WC60,1955-01-30,S,M,2010-01-29,False,30,35,True,2014-06-30 00:00:00
+64,582347317,adventure-works\michael7,4,Production Technician - WC60,1973-09-05,S,M,2010-02-23,False,26,33,True,2014-06-30 00:00:00
+65,8066363,adventure-works\randy0,4,Production Technician - WC60,1970-04-28,M,M,2010-02-23,False,29,34,True,2014-06-30 00:00:00
+66,834186596,adventure-works\karan0,4,Production Technician - WC60,1970-03-07,S,M,2009-12-22,False,28,34,True,2014-06-30 00:00:00
+67,63179277,adventure-works\jay0,4,Production Technician - WC60,1976-02-11,S,M,2009-03-05,False,32,36,True,2014-06-30 00:00:00
+68,537092325,adventure-works\charles0,4,Production Technician - WC60,1971-09-02,S,M,2009-12-03,False,27,33,True,2014-06-30 00:00:00
+69,752513276,adventure-works\steve0,4,Production Technician - WC60,1991-04-06,S,M,2009-02-15,False,31,35,True,2014-06-30 00:00:00
+70,36151748,adventure-works\david2,4,Production Technician - WC60,1984-12-29,M,M,2008-12-15,False,33,36,True,2014-06-30 00:00:00
+71,578935259,adventure-works\michael3,3,Production Supervisor - WC30,1989-01-29,S,M,2009-02-15,False,70,55,True,2014-06-30 00:00:00
+72,443968955,adventure-works\steven0,4,Production Technician - WC30,1977-05-14,M,M,2008-12-01,False,41,40,True,2014-06-30 00:00:00
+73,138280935,adventure-works\carole0,4,Production Technician - WC30,1983-10-19,M,F,2008-12-19,False,42,41,True,2014-06-30 00:00:00
+74,420023788,adventure-works\bjorn0,4,Production Technician - WC30,1989-11-06,S,M,2009-01-07,False,43,41,True,2014-06-30 00:00:00
+75,363996959,adventure-works\michiko0,4,Production Technician - WC30,1982-06-27,S,M,2009-01-26,False,44,42,True,2014-06-30 00:00:00
+76,227319668,adventure-works\carol0,4,Production Technician - WC30,1988-10-17,M,F,2009-02-12,False,45,42,True,2014-06-30 00:00:00
+77,301435199,adventure-works\merav0,4,Production Technician - WC30,1983-05-13,M,F,2009-03-03,False,46,43,True,2014-06-30 00:00:00
+78,370989364,adventure-works\reuben0,3,Production Supervisor - WC40,1987-08-27,M,M,2008-12-15,False,72,56,True,2014-06-30 00:00:00
+79,697712387,adventure-works\eric1,4,Production Technician - WC40,1966-12-08,M,M,2010-01-24,False,60,50,True,2014-06-30 00:00:00
+80,943170460,adventure-works\sandeep0,4,Production Technician - WC40,1970-12-03,S,M,2010-01-17,False,65,52,True,2014-06-30 00:00:00
+81,413787783,adventure-works\mihail0,4,Production Technician - WC40,1971-03-09,S,M,2009-12-29,False,64,52,True,2014-06-30 00:00:00
+82,58791499,adventure-works\jack1,4,Production Technician - WC40,1973-08-29,S,M,2010-03-03,False,62,51,True,2014-06-30 00:00:00
+83,988315686,adventure-works\patrick1,4,Production Technician - WC40,1973-12-23,M,M,2010-02-12,False,61,50,True,2014-06-30 00:00:00
+84,947029962,adventure-works\frank3,4,Production Technician - WC40,1952-03-02,M,M,2010-02-05,False,66,53,True,2014-06-30 00:00:00
+85,1662732,adventure-works\brian2,4,Production Technician - WC40,1970-12-23,S,M,2009-12-11,False,63,51,True,2014-06-30 00:00:00
+86,769680433,adventure-works\ryan0,4,Production Technician - WC40,1972-06-13,M,M,2009-01-05,False,59,49,True,2014-06-30 00:00:00
+87,7201901,adventure-works\cristian0,3,Production Supervisor - WC10,1984-04-11,M,M,2008-12-22,False,67,53,True,2014-06-30 00:00:00
+88,294148271,adventure-works\betsy0,4,Production Technician - WC10,1966-12-17,S,F,2009-12-18,False,99,69,True,2014-06-30 00:00:00
+89,90888098,adventure-works\patrick0,4,Production Technician - WC10,1986-09-10,S,M,2010-02-01,False,96,68,True,2014-06-30 00:00:00
+90,82638150,adventure-works\danielle0,4,Production Technician - WC10,1986-09-07,S,F,2010-02-20,False,97,68,True,2014-06-30 00:00:00
