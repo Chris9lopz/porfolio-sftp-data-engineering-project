@@ -53,6 +53,16 @@ SQL Server → Extractor → Serializer (CSV) → Local File → SFTP Loader →
 - Environment variables handled via `.env`
 - No hardcoded credentials
 
+### ✅ Data Partitioning
+
+- Large datasets are split into multiple CSV files based on a configurable row limit
+
+- Output files follow the pattern:
+
+`data_part1.csv, data_part2.csv, ...`
+
+- Each file includes headers and is independently consumable
+
 ---
 
 ## 🧰 Development Tools
@@ -140,11 +150,13 @@ project/
 
 2. **Serialize**
    - Receives generator input
-   - Writes CSV file using `csv.DictWriter`
+   - Writes CSV files in chunks using a row-based partitioning strategy
+   - Generates multiple files `(*_partN.csv)` for large datasets
    - Uses temporary file to ensure atomic writes
 
 3. **Load (SFTP)**
    - Connects via `paramiko`
+   - Automatically discovers partitioned files in the output directory
    - Uploads file with retry logic
    - Handles connection failures gracefully
 
@@ -186,13 +198,17 @@ python main.py
 - Local file generated:
 
 ```text
-output/data_YYYYMMDD_HHMMSS.csv
+output/data_YYYYMMDD_HHMMSS_part1.csv
+output/data_YYYYMMDD_HHMMSS_part2.csv
+output/data_YYYYMMDD_HHMMSS_part3.csv
 ```
 
 - Uploaded to:
 
 ```text
-/data_YYYYMMDD_HHMMSS.csv
+/data_YYYYMMDD_HHMMSS_part1.csv
+/data_YYYYMMDD_HHMMSS_part2.csv
+/data_YYYYMMDD_HHMMSS_part3.csv
 ```
 
 ---
@@ -214,6 +230,14 @@ Improves robustness against transient network issues.
 ### Decoupled Components
 
 Each module can be independently tested, reused, or replaced.
+
+### Data Partitioning Strategy
+
+Improve scalability for large datasets, avoiding large single-file transfers.
+
+### Automated File Discovery
+
+Eliminate manual file handling and simplify pipeline orchestration.
 
 ---
 
