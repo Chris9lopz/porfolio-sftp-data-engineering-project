@@ -8,13 +8,13 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-def extract_data():
+def extract_data(job_title=None):
     # Get .env variables
-    server = os.getenv('DB_SERVER')
-    database = os.getenv('DB_NAME')
-    username = os.getenv('DB_USER')
-    password = os.getenv('DB_PASS')
-    driver = os.getenv('DB_DRIVER')
+    server = os.getenv("DB_SERVER")
+    database = os.getenv("DB_NAME")
+    username = os.getenv("DB_USER")
+    password = os.getenv("DB_PASS")
+    driver = os.getenv("DB_DRIVER")
     # Set connections
     conn_str = (
         f"DRIVER={driver};"
@@ -42,11 +42,15 @@ def extract_data():
         [ModifiedDate]
         FROM [AdventureWorks2019].[HumanResources].[Employee]
     """
+    params = ()
+    if job_title is not None:
+        query += " WHERE [JobTitle] = ?"
+        params = (job_title,)
     # Try connection
     try:
         with pyodbc.connect(conn_str) as conn:
             cursor = conn.cursor()
-            cursor.execute(query)
+            cursor.execute(query, params)
 
             columns = [column[0] for column in cursor.description]
             # Get generator
