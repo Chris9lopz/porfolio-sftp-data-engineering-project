@@ -16,18 +16,21 @@ The solution follows a clean **ETL (Extract → Transform → Load)** architectu
 ## 🏗️ Architecture
 
 ```text
-SQL Server → Extractor → Serializer (CSV) → Local File → SFTP Loader → Remote Server
+                        ┌─ JobTitle 1 ─→ CSV ─→ SFTP
+JSON Config ─→ Loop ────┼─ JobTitle 2 ─→ CSV ─→ SFTP
+                        └─ JobTitle N ─→ CSV ─→ SFTP
 ```
 
 ### Components
 
-| Layer         | Module       | Responsibility                                           |
-| ------------- | ------------ | -------------------------------------------------------- |
-| Extract       | `extractor`  | Query SQL Server and stream data row-by-row              |
-| Transform     | (implicit)   | Lightweight normalization (handled during serialization) |
-| Load (local)  | `serializer` | Write data to CSV using streaming                        |
-| Load (remote) | `loader`     | Upload file to SFTP server with retry logic              |
-| Orchestration | `main.py`    | Coordinate the full pipeline                             |
+| Layer          | Module            | Responsibility                                         |
+| -------------- | ----------------- | ------------------------------------------------------ |
+| Config         | `config`          | JobTitle mapping (ID → name) in `job_titles.json`      |
+| Extract        | `extractor`       | Query SQL Server filtered by JobTitle, stream row-by-row |
+| Transform      | (implicit)        | Lightweight normalization (handled during serialization)|
+| Load (local)   | `serializer`      | Write data to CSV using streaming                      |
+| Load (remote)  | `loader`          | Upload file to SFTP server with retry logic            |
+| Orchestration  | `main.py`         | Loop over JobTitles, coordinate full pipeline          |
 
 ---
 
@@ -120,21 +123,22 @@ project/
 │
 ├── src/
 │   ├── extractor/
-│   │   └── extractor.py
+│   │   └── extractor.py         # SQL Server extraction (filtered by JobTitle)
 │   │
 │   ├── serializer/
-│   │   └── csv_serializer.py
+│   │   └── csv_serializer.py    # CSV writing with partitioning
 │   │
 │   ├── loader/
-│   │   └── sftp_loader.py
+│   │   └── sftp_loader.py       # SFTP upload with retry logic
 │   │
-│   ├── output/     # Save CSV files
+│   ├── output/                  # Temporary CSV output
 │   │
 │   └── config/
+│       └── job_titles.json      # JobTitle ID → name mapping
 │
 ├── tests/
-├── main.py                # Pipeline orchestrator
-├── .env                   # Environment variables
+├── main.py                      # Pipeline orchestrator (loops over JobTitles)
+├── .env                         # Environment variables
 └── README.md
 ```
 
@@ -142,19 +146,22 @@ project/
 
 ## 🔄 Pipeline Flow
 
-1. **Extract**
-   - Use database AdventureWorks2019
-   - Connects to SQL Server using `pyodbc`
-   - Executes a query against a view/table
-   - Streams results as dictionaries
+0. **Configuration**
+   - Loads JobTitle mapping from `src/config/job_titles.json`
+   - Iterates over each entry (ID → name)
 
-2. **Serialize**
+1. **Extract** (per JobTitle)
+   - Connects to SQL Server (AdventureWorks2019) using `pyodbc`
+   - Executes query filtered by `WHERE [JobTitle] = ?`
+   - Streams results as dictionaries via generator
+
+2. **Serialize** (per JobTitle)
    - Receives generator input
    - Writes CSV files in chunks using a row-based partitioning strategy
-   - Generates multiple files `(*_partN.csv)` for large datasets
+   - File pattern: `data_{JobTitleName}_{timestamp}_partN.csv`
    - Uses temporary file to ensure atomic writes
 
-3. **Load (SFTP)**
+3. **Load (SFTP)** (per JobTitle)
    - Connects via `paramiko`
    - Automatically discovers partitioned files in the output directory
    - Uploads file with retry logic
@@ -164,7 +171,7 @@ project/
 
 ## 🔐 Configuration
 
-All sensitive configuration is managed via environment variables:
+### Environment variables (`.env`)
 
 ```env
 # Database
@@ -181,6 +188,20 @@ SFTP_PASS=
 SFTP_PORT=22
 ```
 
+### JobTitle mapping (`src/config/job_titles.json`)
+
+Defines which job titles to process. The pipeline iterates over each entry and filters the SQL query by the job title name.
+
+```json
+[
+  { "1": "Accountant" },
+  { "2": "Accounts Manager" },
+  { "3": "Accounts Payable Specialist" }
+]
+```
+
+The numeric key serves as an identifier; the string value is the actual `[JobTitle]` filter used in the SQL `WHERE` clause and the output filename.
+
 ---
 
 ## ▶️ Execution
@@ -195,20 +216,22 @@ python main.py
 
 ## 📊 Example Output
 
-- Local file generated:
+- Local files generated (one set per JobTitle):
 
 ```text
-output/data_YYYYMMDD_HHMMSS_part1.csv
-output/data_YYYYMMDD_HHMMSS_part2.csv
-output/data_YYYYMMDD_HHMMSS_part3.csv
+output/data_Accountant_20260508_120000_part1.csv
+output/data_Accountant_20260508_120000_part2.csv
+output/data_Chief_Executive_Officer_20260508_120001_part1.csv
+output/data_Chief_Financial_Officer_20260508_120002_part1.csv
 ```
 
 - Uploaded to:
 
 ```text
-/data_YYYYMMDD_HHMMSS_part1.csv
-/data_YYYYMMDD_HHMMSS_part2.csv
-/data_YYYYMMDD_HHMMSS_part3.csv
+/data_Accountant_20260508_120000_part1.csv
+/data_Accountant_20260508_120000_part2.csv
+/data_Chief_Executive_Officer_20260508_120001_part1.csv
+/data_Chief_Financial_Officer_20260508_120002_part1.csv
 ```
 
 ---
@@ -238,6 +261,10 @@ Improve scalability for large datasets, avoiding large single-file transfers.
 ### Automated File Discovery
 
 Eliminate manual file handling and simplify pipeline orchestration.
+
+### Per-JobTitle Processing
+
+The pipeline iterates over a configurable list of job titles, generating one set of partitioned CSV files per title. Each file is independently identifiable by the job title name embedded in the filename, enabling targeted uploads and downstream processing.
 
 ---
 
